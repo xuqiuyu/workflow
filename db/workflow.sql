@@ -1,6 +1,6 @@
 create table workflow (
   id serial not null,
-  code varchar(255) not null,
+  code varchar(255) not null UNIQUE,
   name varchar(255) not null,
   description varchar(255), 
   created_at timestamp,
@@ -8,4 +8,4 @@ create table workflow (
   primary key (id)
 );
 
-INSERT INTO workflow(code, name) VALUES('CLIENT_ONBOARDING', 'client onboarding workflow')
+INSERT INTO workflow(code, name) VALUES('CLIENT_ONBOARDING', 'client onboarding workflow');
