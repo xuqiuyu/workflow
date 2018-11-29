@@ -9,3 +9,4 @@ create table wf_node_type (
 
 INSERT INTO wf_node_type(code, description) VALUES('ROLE', 'workflow node typed role');
 INSERT INTO wf_node_type(code, description) VALUES('USER', 'workflow node typed user');
+INSERT INTO wf_node_type(code, description) VALUES('TAG_START', 'workflow node typed start tag');
