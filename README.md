@@ -16,7 +16,7 @@ workflow的实例节点，记录每条业务数据流转的各个节点, 参照�
 ### wf_operation_log(id, wf_task_id, wf_code, wf_node_action, current_node, operator, operate_time)
 操作日志表，记录 谁(operator) 在什么时间(operate_time) 在哪条workflow实例(wf_task_id) 的哪个节点(current_node) 上做了什么事情(wf_node_action)
 
-### 分许不足,考虑后续改进的点：
+### 分析不足,考虑后续改进的点：
 - workflow目前由DEV手动配置，缺少配置模板，不方便灵活配置
 - 节点目前只记录了操作人和定时器，没有记录节点上的操作数据。
 - workflow流转依赖于预定义好的一系列action, workflow本身配套的缺少分析能力(rule)，以来业务带来驱动流转。
